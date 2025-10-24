@@ -1,6 +1,4 @@
-
 """Entry point for the Text Statistics Analyzer program."""
-
 
 from io_ops import get_input_filename, read_text_file, prompt_save_results, write_lines
 from text_stats import calculate_all_statistics, format_output_lines
