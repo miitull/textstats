@@ -1,5 +1,5 @@
 
-"""Entry point (orchestration only)."""
+"""Entry point for the Text Statistics Analyzer program."""
 
 
 from io_ops import get_input_filename, read_text_file, prompt_save_results, write_lines
@@ -10,25 +10,25 @@ def main() -> None:
     """Main program orchestration."""
     print("=== Text Statistics Analyzer ===\n")
     
-    # 1) Get input path (prompt)
+    # Getting input path (prompt)
     input_filename = get_input_filename()
     
     try:
-        # 2) Read text (io_ops)
+        # Read text (io_ops)
         print(f"Reading file: {input_filename}")
         text_content = read_text_file(input_filename)
         
-        # 3) Compute metrics (text_stats)
+        # Compute metrics (text_stats)
         print("Analyzing text...")
         stats = calculate_all_statistics(text_content)
         output_lines = format_output_lines(stats)
         
-        # 4) Print to console
+        # Print to console
         print("\n=== Analysis Results ===")
         for line in output_lines:
             print(line)
         
-        # 5) Write to output file (io_ops)
+        # Write to output file (io_ops)
         output_filename = prompt_save_results()
         if output_filename:
             try:

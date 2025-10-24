@@ -1,9 +1,7 @@
-"""
-User interaction & file I/O. Implement guards (validation) + try/except here.
-"""
+
+""" User interaction & file I/O."""
 
 import os
-
 
 def prompt_nonempty(prompt_text: str) -> str:
     """Prompt user for non-empty input with re-prompt on empty input."""
@@ -78,7 +76,7 @@ def write_lines(path: str, lines: list) -> bool:
 
 
 def get_input_filename() -> str:
-    """Get valid input filename from user with validation."""
+    """Getting valid input filename from user with validation."""
     while True:
         filename = prompt_nonempty("Enter the input filename: ")
         try:
@@ -95,7 +93,7 @@ def get_input_filename() -> str:
 
 
 def get_output_filename() -> str:
-    """Get output filename from user with overwrite confirmation."""
+    """ To Get output filename from user with overwrite confirmation."""
     while True:
         output_file = input("Enter output filename (default: output.txt): ").strip()
         if not output_file:
@@ -108,7 +106,7 @@ def get_output_filename() -> str:
 
 
 def prompt_save_results() -> str:
-    """Ask user if they want to save results and get output filename."""
+    """Asking user if they want to save results and get output filename."""
     while True:
         try:
             save = input("Save results to file? (y/n): ").strip().lower()
