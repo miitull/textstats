@@ -1,0 +1,6 @@
+Word count: 70
+Unique words: 55
+Characters (with spaces): 392
+Characters (no spaces): 322
+Average word length: 4.4
+Most common word(s): it (4)

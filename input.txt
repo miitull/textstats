@@ -1,0 +1,6 @@
+This is a sample text file for testing the text statistics program.
+It contains several words, some repeated words, and punctuation!
+Does it handle different cases? Yes, it converts everything to lowercase.
+The quick brown fox jumps over the lazy dog. Hello hello world!
+My name is Mitul Sharma and i am doing this exercise alone as i have 
+no partner, but it is easy to do alone though haha!
