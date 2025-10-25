@@ -1,12 +1,12 @@
 # Text Stats — Refactor Starter
 
-## 🧠 Overview
+## Overview
 This project is a refactored version of a basic text stats program.  
 The main goal was to separate the logic into three modules so the code is cleaner, easier to test, and doesn't crash on bad input.
 
-- `text_stats.py` → handles all text calculations only (no input/output or try/except)
-- `io_ops.py` → manages user input, file reading/writing, and error handling  
-- `main.py` → connects both modules and runs the whole program
+- text_stats.py → handles all text calculations only (no input/output or try/except)
+- io_ops.py → manages user input, file reading/writing, and error handling  
+- main.py → connects both modules and runs the whole program
 
 ---
 
