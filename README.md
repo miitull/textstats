@@ -1,74 +1,60 @@
-# Text Stats - Refactor Starter
+README
 
-## Overview
-This project is a refactored version of a basic text stats program.  
-The main goal was to separate the logic into three modules so the code is cleaner, easier to test, and doesn't crash on bad input.
+Project Overview:
+This part of the assignment focused on Object-Oriented Programming. It continues from the earlier version where we used functions and now the program is refactored into classes and separate modules. So the goal is to make the code cleaner and more modular using OOP concepts.
 
-- text_stats.py - handles all text calculations only (no input/output or try/except)
-- io_ops.py - manages user input, file reading/writing, and error handling  
-- main.py - connects both modules and runs the whole program
 
----
+Status Checklist:
+- File handling module created
+- Text processing module completed
+- Text analysis module implemented
+- Classes added for each module
+- Docstrings added for all files, classes, and methods
+- README and documentation updated
 
-## How to Run
 
+Class Design:
+FileHandler
+This class handles reading and writing text files. It checks if the file exists and handles file errors using exceptions.
+
+
+TextProcessor
+This class is responsible for cleaning and processing the text. It counts characters, words, and sentences and prepares the data for analysis.
+
+
+TextAnalyzer
+This class performs the main text analysis. It calculates statistics like word frequency, most common words, and overall summary.
+
+
+How to Run:
+1. Open the project folder in VS Code.
+2. Make sure all the modules are in the same directory.
+3. Run the main.py file.
+4. The program will ask for a text file path, then show the calculated text statistics.
+
+
+Command to run:
 python main.py
-When you run it, the program will:
 
-Ask for an input filename
 
-Show these results:
+Design Decisions:
+It is divided into three modules:
+file_handler.py handles all file operations.
+text_processor.py does the text cleaning and processing.
+text_analyzer.py does the statistical analysis.
 
-Word count
+This structure makes the project more organized and easier to maintain. It also helps in testing individual parts without affecting others.
 
-Unique words
 
-Characters (with spaces)
+Notes:
+Tested everything in VS Code before committing to my branch in GitHub and also pasted the link below for my repoitory.
 
-Characters (without spaces)
 
-Average word length (one decimal)
+Repository:
+GitHub: https://github.com/miitull/textstats
 
-Most common word(s) - alphabetical order for ties, (0) if no words
 
-Ask if you want to save results (default file is output.txt)
+Branches:
+main: Working OOP implementation
 
-## Modules
-text_stats.py - pure text processing, no file or user interaction
-io_ops.py - handles prompts, reading/writing files, and try/except blocks
-main.py - keeps things minimal and only calls functions
-
-## Definition of Done
-main.py only orchestrates
-
-text_stats.py has no input/output or exception handling
-
-io_ops.py safely handles all file operations and user input
-
-Program never crashes - re-prompts or exits cleanly
-
-Output matches the required format
-
-README is updated with how to run and what was tested
-
-# Testing
-I tested the program with:
-
-Normal text files
-
-Empty files
-
-Files that only had spaces
-
-Nonexistent files
-
-Invalid user input
-
-Everything worked fine without crashing or breaking.
-
-## My Work
-I completed this project individually.
-I wrote the text-processing functions, added file and input validation, handled errors safely, tested edge cases, and wrote this README.
-
-Assignment-3 README
-
+oop-refactor: Development history
